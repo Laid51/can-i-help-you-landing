@@ -1,6 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =======================
+       REDIRECT NOTIFICATION (404)
+       ======================= */
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('redirect') === '404') {
+        // Create and show the notification
+        const notification = document.createElement('div');
+        notification.className = 'redirect-notification';
+        notification.textContent = 'Vous vous êtes perdu ? On vous a ramené au bon endroit !';
+        document.body.prepend(notification);
+        
+        // Clean the URL without reloading
+        const cleanUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+        
+        // Remove notification after animation
+        setTimeout(() => {
+            notification.remove();
+        }, 5500);
+    }
+
+    /* =======================
        NAVBAR STICKY ON SCROLL
        ======================= */
     const navbar = document.querySelector(".navbar");
@@ -56,35 +77,39 @@ document.addEventListener("DOMContentLoaded", () => {
        CAROUSEL (Host Cities)
        ======================= */
     const track = document.querySelector(".carousel-track");
-    const slides = Array.from(track.children);
-    const prevBtn = document.querySelector(".carousel-btn.prev");
-    const nextBtn = document.querySelector(".carousel-btn.next");
+    
+    // Only run carousel code if the element exists (main page only)
+    if (track) {
+        const slides = Array.from(track.children);
+        const prevBtn = document.querySelector(".carousel-btn.prev");
+        const nextBtn = document.querySelector(".carousel-btn.next");
 
-    let currentIndex = 0;
+        let currentIndex = 0;
 
-    function updateCarousel(newIndex) {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === newIndex);
+        function updateCarousel(newIndex) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle("active", i === newIndex);
+            });
+            currentIndex = newIndex;
+        }
+
+        // Buttons navigation
+        nextBtn.addEventListener("click", () => {
+            const newIndex = (currentIndex + 1) % slides.length;
+            updateCarousel(newIndex);
         });
-        currentIndex = newIndex;
+
+        prevBtn.addEventListener("click", () => {
+            const newIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateCarousel(newIndex);
+        });
+
+        // Auto-slide every 5s
+        setInterval(() => {
+            const newIndex = (currentIndex + 1) % slides.length;
+            updateCarousel(newIndex);
+        }, 5000);
     }
-
-    // Buttons navigation
-    nextBtn.addEventListener("click", () => {
-        const newIndex = (currentIndex + 1) % slides.length;
-        updateCarousel(newIndex);
-    });
-
-    prevBtn.addEventListener("click", () => {
-        const newIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateCarousel(newIndex);
-    });
-
-    // Auto-slide every 5s
-    setInterval(() => {
-        const newIndex = (currentIndex + 1) % slides.length;
-        updateCarousel(newIndex);
-    }, 5000);
 
 
     /* =======================
