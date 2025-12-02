@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* =======================
        REDIRECT NOTIFICATION (404)
        ======================= */
+    const NOTIFICATION_DURATION = 5000; // Duration in ms (matches CSS animation)
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('redirect') === '404') {
         // Create and show the notification
@@ -15,10 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const cleanUrl = window.location.pathname;
         window.history.replaceState({}, document.title, cleanUrl);
         
-        // Remove notification after animation
+        // Remove notification after animation completes
         setTimeout(() => {
             notification.remove();
-        }, 5500);
+        }, NOTIFICATION_DURATION + 100);
     }
 
     /* =======================
