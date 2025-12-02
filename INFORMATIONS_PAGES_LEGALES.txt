@@ -1,0 +1,800 @@
+================================================================================
+INFORMATIONS POUR LES PAGES LÉGALES - CAN I HELP YOU
+================================================================================
+
+Ce document contient toutes les informations nécessaires pour créer les 3 pages
+légales obligatoires : Politique de Confidentialité, Mentions Légales, et 
+Conditions d'Utilisation.
+
+================================================================================
+1. POLITIQUE DE CONFIDENTIALITÉ (PRIVACY POLICY)
+================================================================================
+
+1.1. IDENTITÉ DU RESPONSABLE DU TRAITEMENT
+------------------------------------------
+Nom : Zaher Madi
+Fonction : Chef de projet IT / Dev Lead
+Rôle : Responsable du traitement des données personnelles
+
+Contact : zaher.5hc@gmail.com
+Application : Can I Help You
+Version : 1.0.0
+Date de dernière mise à jour : [Date actuelle]
+
+1.2. DONNÉES PERSONNELLES COLLECTÉES
+------------------------------------
+
+A. DONNÉES D'AUTHENTIFICATION (via Google Sign-In)
+   - Email (obligatoire pour l'authentification)
+   - Nom d'affichage (display name)
+   - Photo de profil (photo URL)
+   - Identifiant unique Firebase (UID)
+   - Token d'authentification Google
+
+B. DONNÉES DE PROFIL UTILISATEUR (optionnelles, saisies par l'utilisateur)
+   - Prénom (first_name)
+   - Nom de famille (last_name)
+   - Nom d'utilisateur (username) - unique
+   - Date de naissance (birth_date)
+   - Ville de résidence (city)
+   - Équipe favorite (favorite_team)
+   - Langue préférée (language) - par défaut : français
+
+C. DONNÉES DE PRÉFÉRENCES
+   - Équipes favorites (favoriteTeams - tableau)
+   - Villes favorites (favoriteCities - tableau)
+   - Préférences de notifications (notifications: true/false)
+   - Matchs favoris (favorites - stockés dans table séparée)
+
+D. DONNÉES TECHNIQUES ET D'UTILISATION
+   - Token de notification push (push_token) - Expo Push Notification
+   - Type de token (user ou guest)
+   - Date de création du compte (created_at)
+   - Date de dernière mise à jour (updated_at)
+   - Données de géolocalisation (latitude, longitude) - uniquement lors de l'utilisation
+   - Données de cache local (AsyncStorage) - stockées sur l'appareil uniquement
+
+E. DONNÉES DE NAVIGATION (si applicable)
+   - Historique de recherche (si implémenté)
+   - Pages visitées dans l'application
+
+1.3. COMMENT LES DONNÉES SONT COLLECTÉES
+----------------------------------------
+
+A. COLLECTE DIRECTE
+   - Lors de l'inscription/connexion via Google Sign-In
+   - Lors de la saisie manuelle dans le profil utilisateur
+   - Lors de l'activation des notifications push
+   - Lors de l'utilisation de la géolocalisation (avec permission explicite)
+
+B. COLLECTE AUTOMATIQUE
+   - Token de notification push (enregistré automatiquement après autorisation)
+   - Données de géolocalisation (uniquement pendant l'utilisation active)
+   - Données de cache local (AsyncStorage) - stockage local uniquement
+
+C. COLLECTE VIA SERVICES TIERS
+   - Google Sign-In : authentification et profil Google
+   - Firebase Authentication : gestion des sessions et tokens
+   - Expo Push Notification Service : envoi de notifications
+
+1.4. POURQUOI NOUS COLLECTONS CES DONNÉES
+------------------------------------------
+
+A. DONNÉES D'AUTHENTIFICATION
+   - Finalité : Permettre l'authentification sécurisée et la gestion des comptes
+   - Base légale : Consentement de l'utilisateur (RGPD Art. 6.1.a)
+   - Conservation : Durée de vie du compte + 3 ans après suppression
+
+B. DONNÉES DE PROFIL
+   - Finalité : Personnalisation de l'expérience utilisateur, affichage du profil
+   - Base légale : Consentement de l'utilisateur (RGPD Art. 6.1.a)
+   - Conservation : Durée de vie du compte + 3 ans après suppression
+
+C. PRÉFÉRENCES ET FAVORIS
+   - Finalité : Personnalisation du contenu (matchs, équipes, villes), amélioration de l'expérience
+   - Base légale : Consentement de l'utilisateur (RGPD Art. 6.1.a)
+   - Conservation : Durée de vie du compte + 3 ans après suppression
+
+D. TOKENS DE NOTIFICATION PUSH
+   - Finalité : Envoi de notifications concernant les matchs, actualités, alertes importantes
+   - Base légale : Consentement de l'utilisateur (RGPD Art. 6.1.a)
+   - Conservation : Jusqu'à désactivation des notifications ou suppression du compte
+
+E. DONNÉES DE GÉOLOCALISATION
+   - Finalité : Affichage de la carte, recherche d'hôtels/restaurants à proximité
+   - Base légale : Consentement de l'utilisateur (RGPD Art. 6.1.a)
+   - Conservation : Non stockées, utilisées uniquement en temps réel
+
+F. DONNÉES TECHNIQUES
+   - Finalité : Fonctionnement de l'application, amélioration des performances
+   - Base légale : Intérêt légitime (RGPD Art. 6.1.f)
+   - Conservation : Durée de vie du compte
+
+1.5. SERVICES TIERS UTILISÉS
+-----------------------------
+
+A. GOOGLE SIGN-IN
+   - Service : Authentification Google
+   - Données partagées : Email, nom, photo de profil
+   - Finalité : Authentification utilisateur
+   - Politique de confidentialité : https://policies.google.com/privacy
+   - Pays : États-Unis (transfert hors UE - Standard Contractual Clauses)
+
+B. FIREBASE AUTHENTICATION
+   - Service : Google Firebase (Google Cloud Platform)
+   - Données partagées : UID, email, tokens d'authentification
+   - Finalité : Gestion des sessions, authentification sécurisée
+   - Politique de confidentialité : https://firebase.google.com/support/privacy
+   - Pays : États-Unis (transfert hors UE - Standard Contractual Clauses)
+
+C. EXPO PUSH NOTIFICATION SERVICE
+   - Service : Expo (Expo.dev)
+   - Données partagées : Token de notification push
+   - Finalité : Envoi de notifications push
+   - Politique de confidentialité : https://expo.dev/privacy
+   - Pays : États-Unis (transfert hors UE - Standard Contractual Clauses)
+
+D. TRIPADVISOR API
+   - Service : TripAdvisor Content API
+   - Données partagées : Coordonnées géographiques (lat/lng) pour recherche d'hôtels/restaurants
+   - Finalité : Affichage d'informations sur les hôtels et restaurants à proximité
+   - Politique de confidentialité : https://tripadvisor.mediaroom.com/FR-privacy-policy
+   - Pays : États-Unis (transfert hors UE - Standard Contractual Clauses)
+
+E. MAPBOX
+   - Service : Mapbox Maps API
+   - Données partagées : Coordonnées géographiques (lat/lng), requêtes de géocodage
+   - Finalité : Affichage de cartes, géocodage, calcul d'itinéraires
+   - Politique de confidentialité : https://www.mapbox.com/legal/privacy
+   - Pays : États-Unis (transfert hors UE - Standard Contractual Clauses)
+
+F. CLOUDINARY
+   - Service : Cloudinary (optimisation d'images)
+   - Données partagées : Images uploadées par les utilisateurs (si fonctionnalité activée)
+   - Finalité : Stockage et optimisation d'images
+   - Politique de confidentialité : https://cloudinary.com/privacy
+   - Pays : États-Unis (transfert hors UE - Standard Contractual Clauses)
+
+G. CLOUDFLARE WORKERS
+   - Service : Cloudflare (hébergement API)
+   - Données partagées : Requêtes API, logs techniques (sans données personnelles identifiables)
+   - Finalité : Hébergement et traitement des requêtes API
+   - Politique de confidentialité : https://www.cloudflare.com/privacypolicy/
+   - Pays : Global (Edge Network), conformité RGPD
+
+H. NEON POSTGRESQL
+   - Service : Neon (base de données PostgreSQL)
+   - Données partagées : Toutes les données utilisateur stockées
+   - Finalité : Stockage des données utilisateur et favoris
+   - Politique de confidentialité : https://neon.tech/privacy-policy
+   - Pays : Free Tier
+AWS
+Frankfurt, Germanyeu-central-1
+
+
+I. UPSTASH REDIS (si utilisé)
+   - Service : Upstash (cache Redis)
+   - Données partagées : Données mises en cache (hôtels, restaurants) - pas de données personnelles
+   - Finalité : Amélioration des performances via cache
+   - Politique de confidentialité : https://upstash.com/privacy
+   - Pays : Free Tier
+AWS
+Frankfurt, Germanyeu-central-1
+
+
+1.6. BASE DE DONNÉES ET STOCKAGE
+--------------------------------
+
+A. BASE DE DONNÉES PRINCIPALE
+   - Service : Neon PostgreSQL
+   - Tables principales :
+     * users : Profils utilisateurs
+     * favorites : Matchs favoris
+     * tokens : Tokens de notification push
+     * actualites : Actualités (contenu éditorial)
+     * annonces : Annonces (contenu éditorial)
+   - Sécurité : Chiffrement en transit (SSL/TLS), accès sécurisé via Cloudflare Workers
+
+B. STOCKAGE LOCAL (APPAREIL)
+   - Service : AsyncStorage (React Native)
+   - Données stockées : Cache local (hôtels, restaurants, images), préférences temporaires
+   - Localisation : Uniquement sur l'appareil de l'utilisateur
+   - Suppression : Lors de la désinstallation de l'application
+
+1.7. DURÉE DE CONSERVATION DES DONNÉES
+--------------------------------------
+
+A. DONNÉES DE COMPTE UTILISATEUR
+   - Conservation : Durée de vie du compte actif
+   - Suppression : 3 ans après dernière connexion ou demande de suppression
+   - Archivage : Données anonymisées peuvent être conservées à des fins statistiques
+
+B. TOKENS DE NOTIFICATION
+   - Conservation : Jusqu'à désactivation des notifications ou suppression du compte
+   - Suppression : Immédiate lors de la désactivation
+
+C. DONNÉES DE GÉOLOCALISATION
+   - Conservation : Aucune conservation, utilisation en temps réel uniquement
+
+D. DONNÉES DE CACHE
+   - Conservation : 24 heures (Redis) ou selon paramètres de l'appareil (AsyncStorage)
+   - Suppression : Automatique après expiration
+
+1.8. DROITS DES UTILISATEURS (RGPD)
+-----------------------------------
+
+Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :
+
+A. DROIT D'ACCÈS (Art. 15 RGPD)
+   - Vous pouvez demander une copie de toutes vos données personnelles
+   - Contact : [Email à compléter]
+
+B. DROIT DE RECTIFICATION (Art. 16 RGPD)
+   - Vous pouvez modifier vos données directement dans l'application (profil)
+   - Vous pouvez demander la correction de données inexactes
+
+C. DROIT À L'EFFACEMENT (Art. 17 RGPD - "Droit à l'oubli")
+   - Vous pouvez supprimer votre compte et toutes vos données
+   - Fonction disponible dans l'application : Paramètres → Supprimer mon compte
+   - Suppression définitive sous 30 jours
+
+D. DROIT À LA LIMITATION DU TRAITEMENT (Art. 18 RGPD)
+   - Vous pouvez demander la limitation du traitement de vos données
+   - Contact : [Email à compléter]
+
+E. DROIT À LA PORTABILITÉ (Art. 20 RGPD)
+   - Vous pouvez récupérer vos données dans un format structuré et lisible
+   - Format : JSON
+   - Contact : [Email à compléter]
+
+F. DROIT D'OPPOSITION (Art. 21 RGPD)
+   - Vous pouvez vous opposer au traitement de vos données pour certaines finalités
+   - Vous pouvez désactiver les notifications dans les paramètres
+
+G. DROIT DE RETIRER VOTRE CONSENTEMENT
+   - Vous pouvez retirer votre consentement à tout moment
+   - Cela n'affecte pas la licéité du traitement effectué avant le retrait
+
+H. DROIT D'INTRODUIRE UNE RÉCLAMATION
+   - Vous pouvez introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés)
+   - Site : https://www.cnil.fr
+   - Adresse : 3 Place de Fontenoy - TSA 80715 - 75334 PARIS CEDEX 07
+
+1.9. SÉCURITÉ DES DONNÉES
+--------------------------
+
+A. MESURES TECHNIQUES
+   - Chiffrement en transit : SSL/TLS pour toutes les communications
+   - Authentification sécurisée : Firebase Authentication avec tokens JWT
+   - Accès API sécurisé : Authentification Bearer Token requise
+   - Base de données : Accès restreint, requêtes paramétrées pour éviter les injections SQL
+   - Hébergement : Cloudflare Workers (sécurité Edge)
+
+B. MESURES ORGANISATIONNELLES
+   - Accès limité aux données : Seuls les développeurs autorisés ont accès
+   - Logs d'accès : Traçabilité des accès aux données
+   - Formation de l'équipe : Bonnes pratiques de sécurité
+
+C. NOTIFICATION EN CAS DE VIOLATION
+   - En cas de violation de données, notification à la CNIL sous 72h
+   - Notification aux utilisateurs concernés si risque élevé
+
+1.10. COOKIES ET TRACKERS
+--------------------------
+
+A. COOKIES UTILISÉS
+   - L'application mobile n'utilise pas de cookies au sens traditionnel
+   - Utilisation de tokens d'authentification stockés localement (AsyncStorage)
+   - Tokens Firebase stockés de manière sécurisée sur l'appareil
+
+B. TRACKERS
+   - Aucun tracker publicitaire tiers (Google Analytics, Facebook Pixel, etc.)
+   - Aucune publicité ciblée basée sur les données personnelles
+   - Analytics interne uniquement pour améliorer l'application (si implémenté)
+
+1.11. TRANSFERTS DE DONNÉES HORS UE
+------------------------------------
+
+Certains services tiers sont hébergés hors de l'Union Européenne (États-Unis principalement).
+Ces transferts sont encadrés par :
+- Standard Contractual Clauses (SCC) de la Commission Européenne
+- Privacy Shield (si applicable)
+- Conformité RGPD des prestataires
+
+Services concernés :
+- Google (Sign-In, Firebase)
+- Expo (Push Notifications)
+- TripAdvisor
+- Mapbox
+- Cloudinary
+
+1.12. MODIFICATIONS DE LA POLITIQUE
+------------------------------------
+
+- Cette politique peut être modifiée à tout moment
+- Les utilisateurs seront notifiés des changements majeurs
+- Date de dernière mise à jour affichée en haut du document
+- Version consultable dans l'application
+
+1.13. CONTACT POUR QUESTIONS SUR LES DONNÉES
+---------------------------------------------
+
+Pour toute question concernant vos données personnelles :
+- Email : [À compléter]
+- Responsable : Zaher Madi (Chef de projet IT / Dev Lead)
+
+================================================================================
+2. MENTIONS LÉGALES
+================================================================================
+
+2.1. ÉDITEUR DU SITE/APPLICATION
+---------------------------------
+
+Nom de l'application : Can I Help You
+Version : 1.0.0
+Éditeur : Zaher Madi
+Fonction : Chef de projet IT / Dev Lead
+Responsable de la publication : Zaher Madi
+
+Contact :
+- Email : [À compléter]
+- Adresse : [À compléter si nécessaire]
+
+2.2. ÉQUIPE
+-----------
+
+CHEF DE PROJET IT / DEV LEAD
+- Nom : Zaher Madi
+- Responsabilités : Direction technique, développement, architecture, gestion de projet
+
+PRODUCT OWNER
+- Nom : Aicha Amanda
+- Responsabilités : Définition des fonctionnalités, priorisation, vision produit
+
+CHEF BUSINESS
+- Nom : Zaym Attoumani
+- Responsabilités : Stratégie business, partenariats, développement commercial
+
+DÉVELOPPEUR
+- Nom : Laid Ousseni
+- Responsabilités : Développement, maintenance, corrections de bugs
+
+2.3. HÉBERGEMENT
+---------------
+
+API ET SERVICES BACKEND
+- Hébergeur : Cloudflare Workers
+- Adresse : Cloudflare, Inc.
+- Site web : https://www.cloudflare.com
+- Politique de confidentialité : https://www.cloudflare.com/privacypolicy/
+
+BASE DE DONNÉES
+- Service : Neon PostgreSQL
+- Site web : https://neon.tech
+- Politique de confidentialité : https://neon.tech/privacy-policy
+
+APPLICATION MOBILE
+- Distribution iOS : App Store (Apple Inc.)
+- Distribution Android : Google Play Store (Google LLC)
+- Développement : Expo (Expo.dev)
+
+2.4. PROPRIÉTÉ INTELLECTUELLE
+------------------------------
+
+A. CONTENU DE L'APPLICATION
+   - Tous les éléments de l'application (textes, images, logos, design) sont la propriété de Can I Help You
+   - Toute reproduction, même partielle, est interdite sans autorisation
+
+B. DONNÉES SPORTIVES
+   - Les informations sur les matchs, équipes, stades sont fournies à titre informatif
+   - Les droits sur les compétitions sportives appartiennent à leurs organisateurs respectifs
+
+C. DONNÉES TIERS
+   - Les données d'hôtels et restaurants proviennent de TripAdvisor API
+   - Les cartes proviennent de Mapbox
+   - Ces services ont leurs propres conditions d'utilisation
+
+2.5. RESPONSABILITÉ
+-------------------
+
+A. CONTENU
+   - L'application s'efforce de fournir des informations exactes et à jour
+   - Cependant, aucune garantie n'est donnée quant à l'exactitude, la complétude ou l'actualité des informations
+   - L'utilisateur est seul responsable de l'utilisation qu'il fait des informations
+
+B. SERVICES TIERS
+   - L'application utilise des services tiers (TripAdvisor, Mapbox, etc.)
+   - Can I Help You n'est pas responsable du contenu ou des services fournis par ces tiers
+   - En cas de problème avec un service tiers, l'utilisateur doit contacter directement le service concerné
+
+C. DISPONIBILITÉ
+   - L'application est fournie "en l'état"
+   - Aucune garantie n'est donnée quant à la disponibilité continue du service
+   - Des interruptions peuvent survenir pour maintenance ou raisons techniques
+
+D. UTILISATION
+   - L'utilisateur est responsable de l'utilisation qu'il fait de l'application
+   - L'utilisateur s'engage à ne pas utiliser l'application à des fins illégales
+
+2.6. LIENS EXTERNES
+-------------------
+
+L'application peut contenir des liens vers des sites externes :
+- Ces liens sont fournis à titre informatif
+- Can I Help You n'exerce aucun contrôle sur ces sites
+- La responsabilité de Can I Help You ne peut être engagée quant au contenu de ces sites
+
+2.7. PROTECTION DES DONNÉES
+----------------------------
+
+Voir la section "Politique de Confidentialité" pour les détails complets sur :
+- Les données collectées
+- L'utilisation des données
+- Les droits des utilisateurs
+- La sécurité des données
+
+2.8. LOI APPLICABLE ET JURIDICTION
+-----------------------------------
+
+- Loi applicable : Droit français et européen
+- En cas de litige, les tribunaux français sont compétents
+- Conformité avec le RGPD (Règlement Général sur la Protection des Données)
+
+2.9. CONTACT
+------------
+
+Pour toute question concernant les mentions légales :
+- Email : [À compléter]
+- Responsable : Zaher Madi
+
+================================================================================
+3. CONDITIONS D'UTILISATION (CGU)
+================================================================================
+
+3.1. ACCEPTATION DES CONDITIONS
+--------------------------------
+
+En téléchargeant, installant ou utilisant l'application "Can I Help You", vous acceptez sans réserve les présentes Conditions d'Utilisation.
+
+Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser l'application.
+
+3.2. DESCRIPTION DU SERVICE
+----------------------------
+
+Can I Help You est une application mobile qui propose :
+- Des informations sur les matchs de football (CAN 2025 et autres compétitions)
+- Des actualités sportives
+- Des informations sur les stades
+- Des suggestions d'hôtels et restaurants à proximité des stades
+- Un système de favoris pour suivre vos équipes et matchs préférés
+- Des notifications push pour les alertes importantes
+
+3.3. INSCRIPTION ET COMPTE UTILISATEUR
+--------------------------------------
+
+A. CRÉATION DE COMPTE
+   - L'utilisation de certaines fonctionnalités nécessite la création d'un compte
+   - L'inscription se fait via Google Sign-In
+   - Vous devez avoir au moins 13 ans pour créer un compte (ou l'âge légal dans votre pays)
+
+B. RESPONSABILITÉ DU COMPTE
+   - Vous êtes responsable de la confidentialité de votre compte
+   - Vous êtes responsable de toutes les activités effectuées depuis votre compte
+   - Vous devez nous informer immédiatement de toute utilisation non autorisée
+
+C. INFORMATIONS FOURNIES
+   - Vous vous engagez à fournir des informations exactes et à jour
+   - Vous vous engagez à ne pas utiliser de fausses identités
+
+3.4. UTILISATION DE L'APPLICATION
+----------------------------------
+
+A. UTILISATION AUTORISÉE
+   Vous pouvez utiliser l'application pour :
+   - Consulter les informations sur les matchs
+   - Lire les actualités sportives
+   - Rechercher des hôtels et restaurants
+   - Créer des favoris
+   - Partager du contenu (si fonctionnalité disponible)
+
+B. UTILISATION INTERDITE
+   Il est strictement interdit de :
+   - Utiliser l'application à des fins illégales
+   - Tenter d'accéder à des parties non autorisées de l'application
+   - Utiliser des robots, scripts automatisés ou autres moyens pour accéder à l'API
+   - Copier, modifier, distribuer ou vendre le contenu sans autorisation
+   - Utiliser l'application de manière à nuire à d'autres utilisateurs
+   - Transmettre des virus, codes malveillants ou tout élément nuisible
+   - Usurper l'identité d'une autre personne
+   - Violer les droits de propriété intellectuelle
+
+3.5. CONTENU UTILISATEUR
+-------------------------
+
+A. CONTENU GÉNÉRÉ PAR L'UTILISATEUR
+   Si l'application permet de publier du contenu (commentaires, avis, etc.) :
+   - Vous conservez vos droits sur votre contenu
+   - Vous accordez à Can I Help You une licence pour utiliser, afficher et distribuer votre contenu dans l'application
+   - Vous vous engagez à ne pas publier de contenu illégal, offensant, diffamatoire ou violant les droits d'autrui
+
+B. MODÉRATION
+   - Can I Help You se réserve le droit de supprimer tout contenu jugé inapproprié
+   - Can I Help You se réserve le droit de suspendre ou supprimer un compte en cas de violation
+
+3.6. PROPRIÉTÉ INTELLECTUELLE
+------------------------------
+
+A. PROPRIÉTÉ DE CAN I HELP YOU
+   - L'application, son code, son design, ses logos sont la propriété de Can I Help You
+   - Tous les droits sont réservés
+   - Toute reproduction non autorisée est interdite
+
+B. CONTENU TIERS
+   - Certains contenus proviennent de services tiers (TripAdvisor, Mapbox, etc.)
+   - Ces contenus sont soumis aux conditions d'utilisation des services tiers
+   - Can I Help You n'est pas propriétaire de ces contenus
+
+3.7. NOTIFICATIONS PUSH
+-----------------------
+
+A. CONSENTEMENT
+   - Les notifications push nécessitent votre consentement explicite
+   - Vous pouvez activer ou désactiver les notifications à tout moment dans les paramètres
+
+B. TYPES DE NOTIFICATIONS
+   - Alertes de matchs (début, résultats, etc.)
+   - Nouvelles actualités
+   - Alertes importantes
+   - Notifications marketing (si applicable)
+
+C. DÉSACTIVATION
+   - Vous pouvez désactiver les notifications dans les paramètres de l'application
+   - Vous pouvez également les désactiver dans les paramètres de votre appareil
+
+3.8. GÉOLOCALISATION
+--------------------
+
+A. UTILISATION
+   - L'application peut demander l'accès à votre géolocalisation
+   - Cette fonctionnalité est utilisée pour :
+     * Afficher votre position sur la carte
+     * Rechercher des hôtels et restaurants à proximité
+   - La géolocalisation n'est utilisée qu'avec votre consentement explicite
+
+B. DONNÉES
+   - Les données de géolocalisation ne sont pas stockées
+   - Elles sont utilisées uniquement en temps réel pendant l'utilisation
+
+C. DÉSACTIVATION
+   - Vous pouvez désactiver la géolocalisation dans les paramètres de l'application
+   - Vous pouvez également la désactiver dans les paramètres de votre appareil
+
+3.9. DISPONIBILITÉ DU SERVICE
+------------------------------
+
+A. MAINTENANCE
+   - Can I Help You se réserve le droit d'interrompre le service pour maintenance
+   - Les utilisateurs seront informés dans la mesure du possible
+
+B. MODIFICATIONS
+   - Can I Help You se réserve le droit de modifier, suspendre ou interrompre le service à tout moment
+   - Can I Help You se réserve le droit de modifier les fonctionnalités
+
+C. GARANTIES
+   - Le service est fourni "en l'état"
+   - Aucune garantie n'est donnée quant à la disponibilité continue
+   - Aucune garantie n'est donnée quant à l'absence d'erreurs
+
+3.10. RESPONSABILITÉ
+---------------------
+
+A. LIMITATION DE RESPONSABILITÉ
+   - Can I Help You ne peut être tenu responsable des dommages directs ou indirects résultant de l'utilisation de l'application
+   - Can I Help You ne garantit pas l'exactitude, la complétude ou l'actualité des informations
+
+B. SERVICES TIERS
+   - Can I Help You n'est pas responsable des services fournis par des tiers (TripAdvisor, Mapbox, etc.)
+   - En cas de problème avec un service tiers, contactez directement le service concerné
+
+C. UTILISATION
+   - L'utilisateur est seul responsable de l'utilisation qu'il fait de l'application
+   - L'utilisateur est responsable de tous les contenus qu'il publie
+
+3.11. MODIFICATIONS DES CONDITIONS
+-----------------------------------
+
+A. DROIT DE MODIFICATION
+   - Can I Help You se réserve le droit de modifier les Conditions d'Utilisation à tout moment
+   - Les modifications seront publiées dans l'application
+
+B. NOTIFICATION
+   - Les utilisateurs seront notifiés des modifications importantes
+   - La date de dernière mise à jour sera affichée
+
+C. ACCEPTATION
+   - L'utilisation continue de l'application après modification vaut acceptation des nouvelles conditions
+   - Si vous n'acceptez pas les modifications, vous devez cesser d'utiliser l'application
+
+3.12. RÉSILIATION
+------------------
+
+A. PAR L'UTILISATEUR
+   - Vous pouvez supprimer votre compte à tout moment
+   - Fonction disponible dans : Paramètres → Supprimer mon compte
+   - Toutes vos données seront supprimées conformément à la Politique de Confidentialité
+
+B. PAR CAN I HELP YOU
+   - Can I Help You se réserve le droit de suspendre ou supprimer un compte en cas de :
+     * Violation des Conditions d'Utilisation
+     * Utilisation frauduleuse
+     * Comportement inapproprié
+   - Aucun remboursement ne sera effectué en cas de résiliation
+
+C. EFFETS DE LA RÉSILIATION
+   - Accès au compte immédiatement révoqué
+   - Suppression des données conformément à la Politique de Confidentialité
+   - Toute donnée non récupérée avant la résiliation sera perdue
+
+3.13. LOI APPLICABLE ET JURIDICTION
+------------------------------------
+
+- Loi applicable : Droit français
+- En cas de litige, les parties s'engagent à rechercher une solution amiable
+- À défaut d'accord amiable, les tribunaux français sont compétents
+
+3.14. DISPOSITIONS GÉNÉRALES
+-----------------------------
+
+A. INTÉGRALITÉ
+   - Les présentes Conditions d'Utilisation constituent l'intégralité de l'accord entre vous et Can I Help You
+
+B. NULLITÉ PARTIELLE
+   - Si une clause est déclarée nulle, les autres clauses restent en vigueur
+
+C. NON-RENONCIATION
+   - Le fait pour Can I Help You de ne pas se prévaloir d'une clause ne constitue pas une renonciation
+
+3.15. CONTACT
+-------------
+
+Pour toute question concernant les Conditions d'Utilisation :
+- Email : [À compléter]
+- Responsable : Zaher Madi
+
+================================================================================
+4. INFORMATIONS COMPLÉMENTAIRES POUR LA CONFORMITÉ
+================================================================================
+
+4.1. CONFORMITÉ RGPD
+---------------------
+
+✅ DONNÉES COLLECTÉES IDENTIFIÉES
+✅ FINALITÉS DÉFINIES
+✅ BASE LÉGALE IDENTIFIÉE (Consentement, Intérêt légitime)
+✅ DURÉE DE CONSERVATION DÉFINIE
+✅ DROITS DES UTILISATEURS EXPLIQUÉS
+✅ SERVICES TIERS LISTÉS
+✅ TRANSFERTS HORS UE IDENTIFIÉS
+✅ MESURES DE SÉCURITÉ DÉCRITES
+✅ CONTACT RESPONSABLE DU TRAITEMENT
+
+4.2. POINTS À COMPLÉTER
+-----------------------
+
+A. INFORMATIONS DE CONTACT
+   - [ ] Email de contact pour les questions sur les données personnelles
+   - [ ] Email de contact général
+   - [ ] Adresse postale (si nécessaire selon législation)
+
+B. INFORMATIONS TECHNIQUES
+   - [ ] Vérifier la région d'hébergement de Neon PostgreSQL
+   - [ ] Vérifier la région d'hébergement d'Upstash Redis (si utilisé)
+   - [ ] Confirmer les transferts de données hors UE
+
+C. FONCTIONNALITÉS
+   - [ ] Vérifier si des fonctionnalités de partage de contenu sont implémentées
+   - [ ] Vérifier si des commentaires/avis utilisateurs sont possibles
+   - [ ] Vérifier si des analytics sont utilisés (Google Analytics, etc.)
+
+4.3. RECOMMANDATIONS
+--------------------
+
+A. AFFICHAGE DANS L'APPLICATION
+   - Ajouter un lien vers la Politique de Confidentialité dans les paramètres
+   - Ajouter un lien vers les Mentions Légales dans le footer
+   - Ajouter un lien vers les Conditions d'Utilisation lors de l'inscription
+   - Demander le consentement explicite pour les notifications push
+   - Demander le consentement explicite pour la géolocalisation
+
+B. VERSIONNING
+   - Conserver un historique des versions des documents légaux
+   - Afficher la date de dernière mise à jour
+   - Notifier les utilisateurs des changements majeurs
+
+C. ACCESSIBILITÉ
+   - Rendre les documents accessibles même sans compte
+   - Proposer une version simplifiée si nécessaire
+   - Traduire dans les langues supportées (français, anglais, arabe)
+
+4.4. CHECKLIST DE CONFORMITÉ
+----------------------------
+
+POLITIQUE DE CONFIDENTIALITÉ
+✅ Identité du responsable
+✅ Données collectées listées
+✅ Finalités expliquées
+✅ Base légale identifiée
+✅ Services tiers listés
+✅ Durée de conservation
+✅ Droits RGPD expliqués
+✅ Mesures de sécurité
+✅ Contact pour questions
+
+MENTIONS LÉGALES
+✅ Éditeur identifié
+✅ Équipe listée
+✅ Hébergeur identifié
+✅ Propriété intellectuelle
+✅ Responsabilité
+✅ Contact
+
+CONDITIONS D'UTILISATION
+✅ Acceptation des conditions
+✅ Description du service
+✅ Utilisation autorisée/interdite
+✅ Propriété intellectuelle
+✅ Responsabilité
+✅ Résiliation
+✅ Loi applicable
+
+================================================================================
+5. TEMPLATE DE TEXTES POUR LES PAGES WEB
+================================================================================
+
+5.1. STRUCTURE RECOMMANDÉE POUR CHAQUE PAGE
+-------------------------------------------
+
+A. EN-TÊTE
+   - Titre de la page
+   - Date de dernière mise à jour
+   - Version
+
+B. NAVIGATION
+   - Lien vers les autres pages légales
+   - Lien vers la page d'accueil
+
+C. CONTENU
+   - Sections numérotées et clairement organisées
+   - Table des matières (pour les pages longues)
+
+D. PIED DE PAGE
+   - Contact
+   - Liens vers les autres pages légales
+   - Copyright
+
+5.2. TON ET STYLE
+-----------------
+
+- Langage clair et accessible
+- Éviter le jargon juridique excessif
+- Utiliser des exemples concrets
+- Structurer avec des titres et sous-titres
+- Utiliser des listes à puces pour faciliter la lecture
+
+5.3. TRADUCTIONS
+----------------
+
+L'application supporte plusieurs langues (français, anglais, arabe).
+Les pages légales doivent être disponibles dans toutes les langues supportées.
+
+================================================================================
+FIN DU DOCUMENT
+================================================================================
+
+Ce document contient toutes les informations nécessaires pour créer les 3 pages
+légales conformes au RGPD et aux exigences légales françaises/européennes.
+
+Date de création : [Date actuelle]
+Dernière mise à jour : [Date actuelle]
+Version : 1.0
+
