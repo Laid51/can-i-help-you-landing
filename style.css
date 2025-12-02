@@ -131,21 +131,33 @@ ul {
 
 .logo {
     display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
     flex-direction: column;
     gap: 0.1rem;
 }
 
 .logo-main {
     font-family: var(--font-serif);
-    font-size: 1.4rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.15em;
     color: var(--gold);
 }
 
 .logo-sub {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--muted);
 }
