@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAN I HELP YOU – Guide complet pour la CAN 2025 au Maroc | AFCON Morocco</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Guide complet pour la Coupe d'Afrique des Nations 2025 au Maroc : stades, villes, transport, hôtels, visa. L'application officielle pour les fans de la CAN 2025. AFCON Morocco, guide voyage Maroc, informations stades.">
+    <meta name="keywords" content="CAN 2025, AFCON 2025, Maroc, Morocco, Coupe d'Afrique, guide voyage Maroc, stades CAN, application CAN, fan guide Morocco, transport Maroc, visa Maroc">
+
+    <!-- Open Graph (Facebook, WhatsApp, etc.) -->
+    <meta property="og:title" content="CAN I HELP YOU – Guide complet pour la CAN 2025 au Maroc">
+    <meta property="og:description" content="L'application complète pour les fans de la Coupe d'Afrique des Nations 2025 au Maroc. Stades, transport, hôtels, visa et plus.">
+    <meta property="og:image" content="assets/preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.can-i-help-you.com">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CAN I HELP YOU – Guide CAN 2025 Maroc">
+    <meta name="twitter:description" content="L'application complète pour les fans de la CAN 2025 au Maroc. Stades, transport, hôtels et plus.">
+    <meta name="twitter:image" content="assets/preview.jpg">
+    
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "CAN I HELP YOU",
+        "applicationCategory": "TravelApplication",
+        "operatingSystem": "iOS",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "description": "Guide complet pour la Coupe d'Afrique des Nations 2025 au Maroc",
+        "publisher": {
+            "@type": "Organization",
+            "name": "5HCorporation",
+            "email": "5hcorporation.contact@gmail.com"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.5"
+        }
+    }
+    </script>
+
+    <!-- Mobile colors -->
+    <meta name="theme-color" content="#050507">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Import Map pour Three.js -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<!-- Floating App Button -->
+<a href="https://apps.apple.com/fr/app/can-i-help-you/id6755744827"
+   class="floating-app-btn"
+   target="_blank" 
+   rel="noopener">
+    <i class="fas fa-mobile-alt"></i>
+</a>
+
+
+<body>
+
+    <!-- SPLASH 3D TROPHY -->
+<div id="splash">
+    <canvas id="trophy3d"></canvas>
+
+    <h1 class="splash-title">CAN I HELP YOU ?</h1>
+    <p class="splash-subtitle">Votre compagnon pour la Coupe d'Afrique des Nations 2025</p>
+
+    <p class="splash-skip">Cliquez pour passer</p>
+</div>
+
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <canvas id="header-trophy3d" style="width: 60px; height: 60px; margin-right: 12px; display: none;"></canvas>
+            <div class="logo-text">
+                <span class="logo-main">CAN I HELP YOU</span>
+                <span class="logo-sub">Morocco 2025</span>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#features">Guide</a></li>
+            <li><a href="#cities">Villes</a></li>
+            <li><a href="#stadiums">Stades</a></li>
+            <li><a href="#download" class="btn-nav">Télécharger</a></li>
+        </ul>
+
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+<header id="hero" class="hero">
+    <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="hero-eyebrow">COUPE D'AFRIQUE DES NATIONS • MAROC 2025</p>
+<h1 class="hero-title">L'Application Complète pour les Fans de la CAN 2025</h1>
+<p class="hero-subtitle">
+    Accès aux stades, transport, hôtels, tourisme, informations visa. Tout ce dont vous avez besoin pour profiter du Maroc pendant la Coupe d'Afrique des Nations.
+</p>
+
+
+        <div class="hero-buttons">
+            <a href="https://apps.apple.com/fr/app/can-i-help-you/id6755744827" 
+                class="btn btn-primary"
+                target="_blank" 
+                rel="noopener">
+                <i class="fab fa-apple"></i> App Store
+                </a>
+            <a href="#download" class="btn btn-secondary btn-disabled"><i class="fab fa-google-play"></i> Google Play <span class="coming-soon-badge">Bientôt</span></a>
+        </div>
+
+        <div class="hero-tags">
+            <span>Guide Visa & Entrée</span>
+            <span>Hôtels & Airbnb</span>
+            <span>Cartes Transport</span>
+            <span>Accès Stades</span>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- ================= FEATURES ================= -->
+<section id="features" class="section">
+    <div class="container">
+        <h2 class="section-title">Vos Outils Essentiels</h2>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-passport"></i>
+                <h3>Visa & Entrée</h3>
+                <p>Accès instantané aux exigences d'entrée et informations sur les visas.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-hotel"></i>
+                <h3>Hébergement</h3>
+                <p>Trouvez les meilleurs séjours près des stades et centres-villes.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-bus"></i>
+                <h3>Transport</h3>
+                <p>Tous les itinéraires, options, taxis, trains et accès aux stades.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Tourisme</h3>
+                <p>Découvrez la beauté du Maroc pendant la CAN 2025.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= CITIES (CAROUSEL) ================= -->
+<section id="cities" class="section">
+    <div class="container">
+        <h2 class="section-title">Villes Hôtes</h2>
+
+        <div class="carousel">
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide active">
+                        <img src="assets/marrakech.jpg" alt="Marrakech, la Ville Rouge">
+                        <div class="slide-caption"><h3>Marrakech</h3><p>La Ville Rouge</p></div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/agadir.jpg" alt="Agadir, ville côtière du Maroc">
+                        <div class="slide-caption"><h3>Agadir</h3><p>Soleil & Mer</p></div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/casablanca.jpg" alt="Casablanca, métropole moderne du Maroc">
+                        <div class="slide-caption"><h3>Casablanca</h3><p>La moderne 'Casa'</p></div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/chefchaouen-7395031_1280.jpg" alt="Rabat, capitale du Maroc">
+                        <div class="slide-caption"><h3>Rabat</h3><p>La Ville des Jardins</p></div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/fes.jpg" alt="Fès, capitale spirituelle du Maroc">
+                        <div class="slide-caption"><h3>Fès</h3><p>La capitale spirituelle</p></div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/tanger.jpg" alt="Tanger, ville du détroit">
+                        <div class="slide-caption"><h3>Tanger</h3><p>La ville du détroit</p></div>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ================= STADIUMS ================= -->
+<section id="stadiums" class="section">
+    <div class="container">
+        <h2 class="section-title">Stades de Classe Mondiale</h2>
+
+        <div class="stadium-grid">
+            <div class="stadium-card">
+                <img src="assets/international-2694689_1280.jpg" alt="Stade Ibn Battouta à Tanger">
+                <div class="stadium-info"><h3>Stade Ibn Battouta</h3><p>Tanger</p></div>
+            </div>
+
+            <div class="stadium-card">
+                <img src="assets/Rabat stade.jfif" alt="Stade Moulay-Abdallah à Rabat">
+                <div class="stadium-info"><h3>Moulay-Abdallah</h3><p>Rabat</p></div>
+            </div>
+
+            <div class="stadium-card">
+                <img src="assets/Stade agadir.jfif" alt="Stade d'Agadir">
+                <div class="stadium-info"><h3>Stade d'Agadir</h3><p>Agadir</p></div>
+            </div>
+
+            <div class="stadium-card">
+                <img src="assets/marrakesh-999370_1280.jpg" alt="Stade de Marrakech">
+                <div class="stadium-info"><h3>Stade de Marrakech</h3><p>Marrakech</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= AFCON BANNER ================= -->
+<section class="afcon-banner">
+    <div class="afcon-bg" style="background-image: url('assets/afcon.jfif');"></div>
+    <div class="afcon-overlay"></div>
+
+    <div class="afcon-content">
+        <h2>Coupe d'Afrique des Nations 2025</h2>
+        <p>Restez informé des matchs, dates, stades et horaires.</p>
+    </div>
+</section>
+
+
+
+<!-- ================= DOWNLOAD ================= -->
+<section id="download" class="section download">
+    <div class="container text-center">
+        <div class="store-buttons">
+            <a href="https://apps.apple.com/fr/app/can-i-help-you/id6755744827" target="_blank" rel="noopener">
+                <img src="assets/App store.png" alt="Télécharger sur l'App Store">
+            </a>
+            <div class="store-button-disabled">
+                <img src="assets/Google play store.png" alt="Google Play - Bientôt disponible" class="disabled-img">
+                <span class="coming-soon-overlay">Bientôt</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="section">
+    <div class="container">
+        <h2 class="section-title">Questions Fréquentes</h2>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>L'application est-elle officielle ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>CAN I HELP YOU est une application indépendante créée par 5HCorporation pour aider les fans de la CAN 2025. Elle n'est pas affiliée à la CAF ou aux organisateurs officiels, mais fournit des informations utiles pour votre séjour au Maroc.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>L'application est-elle gratuite ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, CAN I HELP YOU est entièrement gratuite à télécharger et à utiliser. Aucun achat in-app n'est requis pour accéder aux fonctionnalités principales.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>La version Android sera-t-elle disponible ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Oui, nous travaillons actuellement sur la version Android. Elle sera disponible sur Google Play Store dans les prochains mois. Restez informé en suivant nos réseaux sociaux.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quelles fonctionnalités l'application inclut-elle ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>CAN I HELP YOU inclut : guide visa et entrée, recherche d'hébergement près des stades, cartes de transport (taxis, trains, bus), informations sur les stades, guide touristique des villes hôtes, et bien plus encore.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Mes données sont-elles sécurisées ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolument. Nous prenons la protection de vos données très au sérieux. Vos mots de passe sont cryptés et nous ne vendons jamais vos données à des tiers. Consultez notre Politique de Confidentialité pour plus de détails.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment puis-je supprimer mon compte ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Vous pouvez supprimer votre compte à tout moment depuis les paramètres de l'application, ou en nous contactant directement à 5hcorporation.contact@gmail.com. Nous traiterons votre demande dans les 48 heures.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>L'application fonctionne-t-elle hors ligne ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Certaines fonctionnalités comme les cartes et guides sont disponibles hors ligne après le téléchargement initial. Cependant, certaines informations en temps réel nécessitent une connexion internet.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Comment signaler un problème ou une erreur ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Vous pouvez nous contacter via le formulaire de contact sur ce site ou directement à 5hcorporation.contact@gmail.com. Nous apprécions vos retours et corrigeons les problèmes rapidement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title">Contact & Support</h2>
+        
+        <div class="contact-container">
+            <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Nom</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+                
+                <div id="contact-success" class="contact-success" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Message envoyé !</h3>
+                    <p>Nous vous répondrons dans les plus brefs délais.</p>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Informations de contact</h3>
+                <p><i class="fas fa-envelope"></i> 5hcorporation.contact@gmail.com</p>
+                <p><i class="fas fa-building"></i> 5HCorporation</p>
+                <p><i class="fas fa-globe"></i> France </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= PRIVACY POLICY ================= -->
+<section id="privacy" class="section legal-section">
+    <div class="container">
+        <h2 class="section-title">Politique de Confidentialité</h2>
+        
+        <div class="legal-content">
+            <p><strong>Dernière mise à jour :</strong> Décembre 2024</p>
+            
+            <h3>1. Collecte des données</h3>
+            <p>CAN I HELP YOU collecte uniquement les données nécessaires au fonctionnement de l'application : nom, email, et préférences d'utilisation. Ces informations sont collectées lorsque vous créez un compte ou utilisez certaines fonctionnalités.</p>
+            
+            <h3>2. Protection des mots de passe</h3>
+            <p>Vos mots de passe sont cryptés en utilisant des algorithmes de hachage sécurisés (bcrypt). Nous ne stockons jamais vos mots de passe en texte clair et ne pouvons pas les récupérer. En cas d'oubli, vous devrez utiliser la fonction de réinitialisation.</p>
+            
+            <h3>3. Aucune revente de données</h3>
+            <p>Nous nous engageons à ne jamais vendre, louer ou partager vos données personnelles avec des tiers à des fins commerciales. Vos données sont utilisées uniquement pour améliorer votre expérience dans l'application.</p>
+            
+            <h3>4. Utilisation des données</h3>
+            <p>Vos données sont utilisées pour : personnaliser votre expérience, vous envoyer des notifications importantes, améliorer l'application, et répondre à vos demandes de support.</p>
+            
+            <h3>5. Suppression de compte</h3>
+            <p>Vous pouvez demander la suppression de votre compte et de toutes vos données à tout moment en nous contactant à <a href="mailto:5hcorporation.contact@gmail.com">5hcorporation.contact@gmail.com</a>. Nous supprimerons vos données dans les 30 jours suivant votre demande.</p>
+            
+            <h3>6. Cookies et technologies similaires</h3>
+            <p>L'application peut utiliser des cookies et technologies similaires pour améliorer les performances et votre expérience. Vous pouvez gérer ces préférences dans les paramètres de votre appareil.</p>
+            
+            <h3>7. Vos droits</h3>
+            <p>Conformément au RGPD, vous avez le droit d'accéder, modifier, supprimer vos données, ou vous opposer à leur traitement. Contactez-nous pour exercer ces droits.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TERMS OF SERVICE ================= -->
+<section id="terms" class="section legal-section">
+    <div class="container">
+        <h2 class="section-title">Conditions Générales d'Utilisation</h2>
+        
+        <div class="legal-content">
+            <p><strong>Dernière mise à jour :</strong> Décembre 2024</p>
+            
+            <h3>1. Acceptation des conditions</h3>
+            <p>En téléchargeant et utilisant CAN I HELP YOU, vous acceptez ces Conditions Générales d'Utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser l'application.</p>
+            
+            <h3>2. Responsabilités de l'utilisateur</h3>
+            <p>Vous êtes responsable de : maintenir la confidentialité de votre compte, utiliser l'application de manière légale et appropriée, ne pas partager votre compte avec des tiers, et fournir des informations exactes.</p>
+            
+            <h3>3. Utilisations interdites</h3>
+            <p>Il est strictement interdit de : utiliser l'application à des fins illégales, tenter d'accéder à des systèmes non autorisés, copier ou reproduire le contenu sans autorisation, harceler ou menacer d'autres utilisateurs, ou utiliser l'application pour diffuser du spam ou des contenus malveillants.</p>
+            
+            <h3>4. Droit de bannissement</h3>
+            <p>5HCorporation se réserve le droit de suspendre ou bannir tout compte qui viole ces conditions, sans préavis ni remboursement. Les décisions sont prises à notre seule discrétion.</p>
+            
+            <h3>5. Exactitude des informations</h3>
+            <p>Bien que nous nous efforcions de fournir des informations exactes et à jour, nous ne garantissons pas l'exactitude complète de toutes les informations dans l'application. Les horaires, prix et disponibilités peuvent changer sans préavis.</p>
+            
+            <h3>6. Limitation de responsabilité</h3>
+            <p>CAN I HELP YOU est fourni "tel quel". Nous ne sommes pas responsables des dommages directs ou indirects résultant de l'utilisation de l'application, y compris mais sans s'y limiter : pertes de données, retards, ou erreurs d'information.</p>
+            
+            <h3>7. Propriété intellectuelle</h3>
+            <p>Tous les contenus de l'application (textes, images, logos, design) sont la propriété de 5HCorporation et sont protégés par les lois sur la propriété intellectuelle.</p>
+            
+            <h3>8. Modifications des conditions</h3>
+            <p>Nous nous réservons le droit de modifier ces conditions à tout moment. Les utilisateurs seront informés des changements majeurs via l'application ou par email.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LEGAL NOTICE ================= -->
+<section id="legal-notice" class="section legal-section">
+    <div class="container">
+        <h2 class="section-title">Mentions Légales</h2>
+        
+        <div class="legal-content">
+            <h3>Éditeur</h3>
+            <p><strong>Nom de l'application :</strong> CAN I HELP YOU</p>
+            <p><strong>Éditeur :</strong> 5HCorporation</p>
+            <p><strong>Email de contact :</strong> <a href="mailto:5hcorporation.contact@gmail.com">5hcorporation.contact@gmail.com</a></p>
+            <p><strong>Pays :</strong> France / Maroc</p>
+            
+            <h3>Hébergement</h3>
+            <p><strong>Hébergeur :</strong> Vercel Inc.</p>
+            <p><strong>Adresse :</strong> 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis</p>
+            <p><strong>Site web :</strong> <a href="https://vercel.com" target="_blank" rel="noopener">vercel.com</a></p>
+            
+            <h3>Directeur de publication</h3>
+            <p>5HCorporation</p>
+            
+            <h3>Protection des données</h3>
+            <p>Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Pour exercer ces droits, contactez-nous à l'adresse email mentionnée ci-dessus.</p>
+            
+            <h3>Cookies</h3>
+            <p>Ce site peut utiliser des cookies pour améliorer votre expérience de navigation. En continuant à utiliser ce site, vous acceptez l'utilisation de cookies.</p>
+            
+            <h3>Droit applicable</h3>
+            <p>Les présentes mentions légales sont régies par le droit français. Tout litige relatif à l'utilisation du site sera de la compétence exclusive des tribunaux français.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <h3>À propos</h3>
+            <p>Votre compagnon officiel pour la CAN 2025.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Légal</h3>
+            <ul>
+                <li><a href="#privacy">Politique de Confidentialité</a></li>
+                <li><a href="#terms">Conditions d'Utilisation</a></li>
+                <li><a href="#legal-notice">Mentions Légales</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact / Support</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Villes</h3>
+            <ul>
+                <li><a href="#cities">Marrakech</a></li>
+                <li><a href="#cities">Rabat</a></li>
+                <li><a href="#cities">Agadir</a></li>
+                <li><a href="#cities">Fès</a></li>
+                <li><a href="#cities">Tanger</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Réseaux sociaux</h3>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>CAN I HELP YOU © 2025 – 5HCorporation – Tous droits réservés</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script type="module" src="trophy.js"></script>
+</body>
+</html>
