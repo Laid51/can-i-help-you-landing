@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection – Can I Help You</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <script>
+        (function() {
+            // Get the current path
+            var path = window.location.pathname;
+            
+            // Known pages (without .html extension)
+            var knownPages = {
+                '/mentions-legales': '/mentions-legales.html',
+                '/privacy-policy': '/privacy-policy.html',
+                '/terms-of-use': '/terms-of-use.html',
+                '/index': '/index.html',
+                '/contact': '/contact/'
+            };
+            
+            // Check if it's a known page without .html
+            var normalizedPath = path.replace(/\/$/, ''); // Remove trailing slash
+            
+            if (knownPages[normalizedPath]) {
+                // Redirect to the correct page with .html
+                window.location.replace(knownPages[normalizedPath]);
+            } else {
+                // It's a true 404 - redirect to main page with notification
+                window.location.replace('/index.html?redirect=404');
+            }
+        })();
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #050507;
+            color: #f5f5f5;
+            font-family: "Outfit", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .message {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        <p>Redirection en cours...</p>
+    </div>
+</body>
+</html>
