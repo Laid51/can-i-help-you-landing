@@ -174,4 +174,33 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 5000);
         });
     }
+
+/* =======================
+   SPLASH SCREEN (ONCE PER SESSION)
+   ======================= */
+const splash = document.getElementById("splash");
+
+if (splash) {
+    const hideSplash = () => {
+        splash.classList.add("hide");
+        document.body.style.overflow = "auto";
+    };
+
+    // 👉 Si le splash a déjà été vu dans cette session
+    if (sessionStorage.getItem("splashSeen") === "true") {
+        hideSplash();
+    } else {
+        // Marquer comme vu
+        sessionStorage.setItem("splashSeen", "true");
+
+        // clic pour passer
+        splash.addEventListener("click", hideSplash);
+
+        // auto-hide après 4s
+        setTimeout(hideSplash, 4000);
+    }
+}
+
+
+
 });
